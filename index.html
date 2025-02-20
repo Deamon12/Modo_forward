@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forward Page</title>
+    <script>
+        // Redirect to A/B testing page
+        // Here you can add your logic to redirect users to different versions of your page
+        // For example, redirecting based on a random number:
+        const randomNumber = Math.random();
+        if (randomNumber < 0.5) {
+            window.location.href = "https://yourdomain.com/pageA";
+        } else {
+            window.location.href = "https://yourdomain.com/pageB";
+        }
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, follow the <a href="https://yourdomain.com/pageA">link to Page A</a> or <a href="https://yourdomain.com/pageB">link to Page B</a>.</p>
+</body>
+</html>
